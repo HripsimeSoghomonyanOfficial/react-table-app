@@ -1,12 +1,13 @@
 import React from 'react';
+import { Record } from '../../App';
 
-interface RecordTableProps {
-  entries: any[];
-}
+type RecordTableProps = {
+  entries: Record[];
+};
 
 const RecordTable: React.FC<RecordTableProps> = ({ entries }) => {
   return (
-    <table>
+    <table className="record-table">
       <thead>
         <tr>
           <th>Field 1</th>
